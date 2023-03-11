@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,53 +16,65 @@
 
         <TextView
 
-            android:layout_width="145dp"
-            android:layout_height="64dp"
-            android:text="Convertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert Currency"
             android:textSize="30dp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="329dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView12"
-            android:layout_width="111dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Entrer votre prix" />
+            android:text="Money :" />
 
         <EditText
             android:id="@+id/txtPrix"
-            android:layout_width="96dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number" />
 
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="From" />
         <Spinner
             android:id="@+id/SpPrix1"
-            android:layout_width="111dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="134dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="1dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="To" />
 
         <Spinner
             android:id="@+id/SpPrix2"
-            android:layout_width="77dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
     </LinearLayout>
@@ -76,10 +89,10 @@
 
         <Button
             android:id="@+id/btnOk"
-            android:layout_width="131dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Convert" />
+            android:text="convert" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
